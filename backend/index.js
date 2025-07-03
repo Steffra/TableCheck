@@ -13,6 +13,8 @@ app.use("/", require("./routes/reservation"));
 app.use("/", require("./routes/api/reservationApi"));
 app.use("/", require("./routes/checkin"));
 
+app.use("/", require("./routes/api/testUtils"));
+
 app.use((req, res) => {
   res.redirect("/");
 });

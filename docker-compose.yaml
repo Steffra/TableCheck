@@ -23,5 +23,19 @@ services:
       - db-data:/var/lib/postgresql/data
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
 
+  e2e:
+    build:
+      context: .
+      dockerfile: e2e/Dockerfile
+    depends_on:
+      - backend
+    environment:
+      BASE_URL: http://backend:3000
+    working_dir: /e2e
+    entrypoint: ["sh", "-c", "npx wait-on http://backend:3000 && npx playwright test"]
+    volumes:
+      - ./e2e:/e2e
+    profiles: ["e2e"]
+
 volumes:
   db-data:

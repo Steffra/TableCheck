@@ -1,0 +1,36 @@
+# Node
+node_modules/
+*.log
+npm-debug.log*
+
+# VSCode
+.vscode/
+.history/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+
+# Docker
+/db-data
+
+# Playwright
+playwright-report/
+
+# Postgres
+*.pid
+
+# Coverage
+coverage/
+
+# Misc
+*.swp
+*.swo
+
+# E2E
+e2e/node_modules/
+e2e/playwright-report/
