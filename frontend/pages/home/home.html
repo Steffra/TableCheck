@@ -14,12 +14,12 @@
     <form method="POST" action="/reservation" class="form" id="waitlistForm" novalidate>
       <div class="form-field">
         <label for="name">Your Name <span class="required-star">*</span></label>
-        <input type="text" id="name" name="name" required placeholder="Enter your name" autofocus>
+        <input type="text" id="name" name="name"  aria-describedby="nameError" aria-describedby="nameError" required placeholder="Enter your name" autofocus>
         <div class="error" id="nameError"></div>
       </div>
       <div class="form-field">
         <label for="size">Party Size <span class="required-star">*</span></label>
-        <input type="number" id="size" name="size" min="1" max="10" required value="2" placeholder="Party size">
+        <input type="number" id="size" name="size" aria-describedby="sizeError" min="1" max="10" required value="2" placeholder="Party size">
         <div class="error" id="sizeError"></div>
       </div>
       <button type="submit" class="btn">Join Waitlist</button>
