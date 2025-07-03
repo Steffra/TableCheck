@@ -10,7 +10,7 @@ services:
     volumes:
       - ./backend:/app
       - ./frontend:/frontend
-    command: npm run dev
+    command: npm run start
 
   db:
     image: postgres:14
