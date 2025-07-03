@@ -30,8 +30,7 @@ services:
       BASE_URL: http://backend:3000
     working_dir: /e2e
     entrypoint: ["sh", "-c", "npx wait-on http://backend:3000 && npx playwright test"]
-    volumes:
-      - ./e2e:/e2e
+
     profiles: ["e2e"]
 
 volumes:
