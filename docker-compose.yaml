@@ -7,9 +7,6 @@ services:
       - db
     environment:
       DATABASE_URL: postgres://postgres:postgres@db:5432/waitlist
-    volumes:
-      - ./backend:/app
-      - ./frontend:/frontend
     command: npm run start
 
   db:
