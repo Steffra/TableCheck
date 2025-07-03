@@ -1,0 +1,46 @@
+:root {
+  --brand-primary: #7935d2;
+  --brand-primary-hover: #a47be5;
+  --brand-primary-text: #fff;
+  --brand-secondary: #f3eaff;
+  --grey-900: #292929;
+  --grey-600: #555;
+  --grey-300: #e5e5e5;
+  --grey-100: #f9f9f9;
+  --input-bg: #f4f7fa;
+  --error: #d32f2f;
+  --font-family: "IBM Plex Sans", "Noto Sans", "Segoe UI", Arial, sans-serif;
+  --spacing-1: 0.5rem;
+  --spacing-2: 1rem;
+  --spacing-3: 1.5rem;
+  --spacing-4: 2rem;
+  --loading-circle-size: 144px;
+}
+
+body {
+  background: var(--grey-100);
+  font-family: var(--font-family);
+  color: var(--grey-900);
+}
+
+.container {
+  max-width: 400px;
+  margin: 5vh auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-3) var(--spacing-3) var(--spacing-4) var(--spacing-3);
+  text-align: center;
+  border: 1px solid var(--grey-300);
+}
+
+.title {
+  color: var(--brand-primary);
+  font-size: 26px;
+  margin-bottom: var(--spacing-1);
+}
+
+.status {
+  color: var(--grey-600);
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,17 @@
+button {
+  background: var(--brand-primary);
+  color: var(--brand-primary-text);
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: var(--font-family);
+
+  &:hover {
+    background: var(--brand-primary-hover);
+  }
+}

@@ -1,0 +1,50 @@
+.reservation-number {
+  display: block;
+  font-size: 2.5rem;
+  color: var(--brand-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.guest-name {
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+#queueMessage {
+  min-height: 2rem;
+  color: var(--brand-primary);
+}
+
+#notifyArea {
+  min-height: var(--spacing-4);
+
+  button {
+    background: none;
+    border: none;
+    color: var(--brand-primary);
+    text-decoration: underline;
+    transition: color 0.15s;
+
+    &:hover {
+      color: var(--brand-primary-hover, #5a2499);
+    }
+  }
+}
+
+button {
+  background: none;
+  margin-top: 1rem;
+  color: var(--brand-primary);
+  border: 1px solid var(--brand-primary);
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover {
+    background: var(--brand-primary);
+    color: white;
+  }
+}

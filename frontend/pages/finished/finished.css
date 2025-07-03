@@ -1,0 +1,16 @@
+.tip {
+  color: var(--brand-primary);
+  background: var(--brand-secondary);
+  border-radius: 8px;
+  padding: var(--spacing-2);
+}
+
+a {
+  margin-top: var(--spacing-3);
+  color: var(--brand-primary);
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--brand-primary-hover);
+  }
+}

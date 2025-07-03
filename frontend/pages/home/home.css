@@ -1,0 +1,58 @@
+form {
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    label {
+      font-weight: 600;
+      margin-bottom: var(--spacing-1);
+
+      .required-star {
+        color: var(--error);
+        margin-left: 2px;
+      }
+    }
+
+    input {
+      padding: 11px;
+      border: 1px solid var(--grey-300);
+      border-radius: 8px;
+      font-size: 1rem;
+      background: var(--input-bg);
+      transition: border 0.2s;
+      margin-bottom: 3px;
+
+      &:focus {
+        border-color: var(--brand-primary);
+        outline: none;
+      }
+    }
+
+    .error {
+      color: var(--error);
+      font-size: 14px;
+      margin-top: 2px;
+      min-height: var(--spacing-3);
+      text-align: start;
+    }
+  }
+  
+  button {
+    background: var(--brand-primary);
+    color: var(--brand-primary-text);
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: var(--font-family);
+
+    &:hover {
+      background: var(--brand-primary-hover);
+    }
+  }
+}

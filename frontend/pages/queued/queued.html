@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Queue Status - TableCheck</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/pages/queued/queued.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">You're in the queue</h1>
+      <p class="status">
+        Hi <span class="guest-name">{{reservationName}}</span>, your reservation
+        number is:
+      </p>
+      <span class="reservation-number">#{{reservationId}}</span>
+      <p id="queueMessage"></p>
+      <div id="notifyArea"></div>
+      <button id="shareButton">🔗 Share</button>
+    </main>
+    <script src="/pages/queued/queued.js"></script>
+    <script src="/pages/queued/notification.js"></script>
+    <script src="/pages/queued/share.js"></script>
+  </body>
+</html>

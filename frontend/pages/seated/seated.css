@@ -1,0 +1,45 @@
+.progress-circle {
+  position: relative;
+  width: var(--loading-circle-size);
+  height: var(--loading-circle-size);
+  margin:auto;
+
+  & svg {
+    width: var(--loading-circle-size);
+    height: var(--loading-circle-size);
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+
+  .background {
+    fill: none;
+    stroke: var(--grey-300);
+    stroke-width: 12;
+  }
+
+  .foreground {
+    fill: none;
+    stroke: var(--brand-primary);
+    stroke-width: 12;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s linear;
+  }
+
+  .countdown-text {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: var(--loading-circle-size);
+    height: var(--loading-circle-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--brand-primary);
+    white-space: pre-line;
+  }
+}

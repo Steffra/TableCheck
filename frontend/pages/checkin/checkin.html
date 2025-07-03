@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Table is Ready - TableCheck</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/pages/checkin/checkin.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Your Table is Ready!</h1>
+    <p class="status">Your table is ready! Please check in below.</p>
+    <form method="POST" action="/check-in/{{reservationId}}">
+      <button type="submit">Check In</button>
+    </form>
+  </main>
+</body>
+</html>

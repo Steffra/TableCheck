@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TableCheck</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/pages/home/home.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Welcome to TableCheck</h1>
+    <p class="status">Join the queue by making a reservation</p>
+    <form method="POST" action="/reservation" class="form" id="waitlistForm" novalidate>
+      <div class="form-field">
+        <label for="name">Your Name <span class="required-star">*</span></label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" autofocus>
+        <div class="error" id="nameError"></div>
+      </div>
+      <div class="form-field">
+        <label for="size">Party Size <span class="required-star">*</span></label>
+        <input type="number" id="size" name="size" min="1" max="10" required value="2" placeholder="Party size">
+        <div class="error" id="sizeError"></div>
+      </div>
+      <button type="submit" class="btn">Join Waitlist</button>
+    </form>
+  </main>
+  <script src="/pages/home/home.js"></script>
+</body>
+</html>
