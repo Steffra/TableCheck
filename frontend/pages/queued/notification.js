@@ -1,6 +1,11 @@
 const notifyArea = document.getElementById("notifyArea");
 
 function initNotification() {
+  if (!("Notification" in window)) {
+    notifyArea.innerHTML = "Your browser does not support notifications.";
+    return;
+  }
+
   notifyArea.innerHTML = "";
   if (Notification.permission === "default") {
     displayPermissionRequestButton();
@@ -25,8 +30,7 @@ function displayNotificationMessage(permission) {
   if (permission === "granted") {
     msg.textContent = "You'll get a notification when it's your turn!";
   } else {
-    msg.textContent =
-      "Notifications are blocked. Enable them in your browser to get notified when it's your turn.";
+    msg.textContent = "Notifications are blocked. Enable them in your browser to get notified when it's your turn.";
   }
   notifyArea.appendChild(msg);
 }
