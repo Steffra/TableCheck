@@ -27,7 +27,7 @@ function displayMessage(data) {
 }
 
 function showBrowserNotification() {
-  if (Notification.permission === "granted") {
+  if ("Notification" in window && Notification.permission === "granted") {
     new Notification("TableCheck reservation - Your table is ready!");
   }
 }
